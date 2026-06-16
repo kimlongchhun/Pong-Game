@@ -99,7 +99,7 @@ void game() {
     if (leftscore == 3)
       mode = GAMEOVER;
   }
- if (AI == false) {
+  if (AI == false) {
     if (upkey == true) righty = righty - 6;
     if (downkey == true) righty = righty + 5;
   } else {
@@ -107,8 +107,7 @@ void game() {
       if (bally > lefty) lefty += 6;
       if (bally < lefty) lefty -= 6;
     }
-  
-}
+  }
 }
 
 void gameClicks() {

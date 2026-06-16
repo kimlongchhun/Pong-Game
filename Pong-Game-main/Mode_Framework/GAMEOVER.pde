@@ -11,4 +11,5 @@ void gameover() {
 }
 
 void gameoverClicks() {
+  resetGame();
 }

@@ -31,11 +31,11 @@ color navy = #0B132B;
 boolean wkey, skey, upkey, downkey;
 boolean AI;
 boolean clickedOnRect(float x, float y, float w, float h) {
-    return mouseX > x &&
-      mouseX < x + w &&
-      mouseY > y &&
-      mouseY < y + h;
-  }
+  return mouseX > x &&
+    mouseX < x + w &&
+    mouseY > y &&
+    mouseY < y + h;
+}
 //Scoring
 int leftscore, rightscore, timer;
 
@@ -90,4 +90,21 @@ void tactile(int x, int y, int w, int h) {
   } else {
     stroke(black);
   }
+}
+
+
+void resetGame() {
+  leftscore = 0;
+  rightscore = 0;
+  leftx = 0;
+  lefty = height / 2;
+  rightx = width;
+  righty = height / 2;
+  ballx = width / 2;
+  bally = height / 2;
+  vx = 5;
+  vy = 3;
+  timer = 50;
+  wkey = skey = upkey = downkey = false;
+  mode = INTRO;
 }
